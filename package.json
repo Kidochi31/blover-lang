@@ -1,0 +1,25 @@
+{
+  "name": "blover-lang",
+  "displayName": "Blover Lang",
+  "description": "Syntax highlighting for Blover",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.109.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "blover",
+      "aliases": ["Blover", "blover"],
+      "extensions": [".blover",".bv"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "blover",
+      "scopeName": "source.bv",
+      "path": "./syntaxes/blover.tmLanguage.json"
+    }]
+  }
+}
