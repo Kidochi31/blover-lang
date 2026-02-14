@@ -7,13 +7,16 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#lineComment"
 		}
 	],
 	"repository": {
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.blover",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(int|bool|in|out|ref|assume|assert|confirm|param|mut|ret|type|refine|if)\\b"
 			}]
 		},
 		"strings": {
@@ -26,7 +29,15 @@
 					"match": "\\\\."
 				}
 			]
-		}
+		},
+		"lineComment": {
+			"patterns": [
+				{
+				"name": "comment.line",
+				"match": ";.*\\n?"
+				}
+			]
+ 		}
 	},
 	"scopeName": "source.bv"
 }
